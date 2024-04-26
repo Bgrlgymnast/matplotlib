@@ -10,6 +10,7 @@ The executive team has tasked you with generating all of the tables and figures 
 
 ## Instructions
 This assignment is broken down into the following tasks:
+ 
   Prepare the data.
   Generate summary statistics.
   Create bar charts and pie charts.
@@ -31,18 +32,21 @@ Your summary statistics should include:
 
 ## Create Bar Charts and Pie Charts
 1. Generate two bar charts. Both charts should be identical and show the total total number of rows (Mouse ID/Timepoints) for each drug regimen throughout the study.
+
     Create the first bar chart with the Pandas DataFrame.plot() method.
     Create the second bar chart with Matplotlib's pyplot methods.
 2. Generate two pie charts. Both charts should be identical and show the distribution of female versus male mice in the study.
+
     Create the first pie chart with the Pandas DataFrame.plot() method.
     Create the second pie chart with Matplotlib's pyplot methods.
 
 ## Calculate Quartiles, Find Outliers, and Create a Box Plot
 1. Calculate the final tumor volume of each mouse across four of the most promising treatment regimens: Capomulin, Ramicane, Infubinol, and Ceftamin. Then, calculate the quartiles and IQR, and determine if there are any potential outliers across all four treatment regimens. Use the following substeps:
+
     Create a grouped DataFrame that shows the last (greatest) time point for each mouse. Merge this grouped DataFrame with the original cleaned DataFrame.
     Create a list that holds the treatment names as well as a second, empty list to hold the tumor volume data.
     Loop through each drug in the treatment list, locating the rows in the merged DataFrame that correspond to each treatment. Append the resulting final tumor volumes for each drug to the empty list.
-  Determine outliers by using the upper and lower bounds, and then print the results.
+    Determine outliers by using the upper and lower bounds, and then print the results.
 2. Using Matplotlib, generate a box plot that shows the distribution of the final tumor volume for all the mice in each treatment group. Highlight any potential outliers in the plot by changing their color and style.
 
 ## Create a Line Plot and a Scatter Plot
@@ -55,9 +59,13 @@ Your summary statistics should include:
 
 ## Hints and Considerations
 Use the code comments in the provided starter file to guide you through this assignment.
+
 Use proper labeling for your plots. Include plot titles, axis labels, legend labels, x-axis and y-axis limits, etc.
+
 As you work on this assignment, refer to Stack Overflow and the Matplotlib documentation for guidance. These are essential tools in every data analyst's tool belt.
+
 Remember that there are many ways to approach a data problem: One way is to break up your task into micro tasks. For example, ask yourself questions like the following:
+
 How does my DataFrame need to be structured so it has the correct x-axis and y-axis?
   How do I build a basic scatter plot?
   How do I add a label to a scatter plot?
